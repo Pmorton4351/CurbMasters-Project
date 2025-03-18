@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    body { 
+      margin: 2rem;}
+    menu {
+      padding: 0; 
+      margin: 0; 
+      list-style-type: none;
+      background-color: yellow;}
+    footer {
+      padding: 2rem;
+      background-color: grey;}
+    main {
+      background-color: aqua;}
+    div { 
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;}
+    p { 
+      padding: 1rem;
+      border: 1px solid #000;}
+  </style>
+</head>
+<body>
+  <header>
+    <!-- ToDo add logo -->
+  <nav>
+    <menu>
+      <li>Home</li>
+      <li>Page 2</li>
+      <li>Page 3</li>
+    </menu>
+  </nav>
+</header>
+<main>
+  <!-- every page has a header 1 because of accessability and SEO-->
+  <h1>This will be header1</h1>
+  <div>
+    <p>There is some text in here</p>
+    <p>There is some text in here</p>
+    <p>There is some text in here</p>
+  </div>
+</main>
+<footer>This is my footer</footer>
+</body>
+</html>
