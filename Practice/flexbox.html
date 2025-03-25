@@ -6,6 +6,7 @@
   <title>Flexbox</title>
   <style>
     body { 
+      font-size: 1rem;
       margin: 2rem;}
     menu {
       padding: 0; 
@@ -16,21 +17,24 @@
       padding: 2rem;
       background-color: grey;}
     main {
-      background-color: aqua;}
-    div { 
+      background-color: aqua;
+      padding: .2rem}
+    menu.flex-container {
+      justify-content: left;}
+    .flex-container { 
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-evenly;}
     p { 
       padding: 1rem;
-      border: 1px solid #000;}
+      border: 1px solid #000000;}
   </style>
 </head>
 <body>
   <header>
     <!-- ToDo add logo -->
   <nav>
-    <menu>
+    <menu class="flex-container">
       <li>Home</li>
       <li>Page 2</li>
       <li>Page 3</li>
@@ -40,7 +44,8 @@
 <main>
   <!-- every page has a header 1 because of accessability and SEO-->
   <h1>This will be header1</h1>
-  <div>
+  <img src="../assets/images/landscape-photo.jpg" alt="Mountain"
+  <div class="flex-container">
     <p>There is some text in here</p>
     <p>There is some text in here</p>
     <p>There is some text in here</p>
