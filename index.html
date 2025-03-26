@@ -7,20 +7,45 @@
 </head>
 <style>
 
-  menu{ 
+body {
+    margin: .08rem}
+    
+menu { 
+    margin: 0;  
+    padding: .1rem;
     font: italiana;
     background-color: #7a7676;
-    font-size: 2rem;}
+    font-size: 1.75rem;}
+
   h1 { 
     font-size: 1.5rem;
-    font: italiana;}
+    font: italiana; 
+    text-align: center;
+    margin-bottom: 0rem;}
 
+  p { 
+    text-align: center;
+    padding: 5rem 1rem 1rem 1rem;
+    border: 1px solid #000000; 
+    box-shadow: 5px 5px 15px #0000004d; /*This makes it appear to float*/
+    border-radius: 5px;} /*This rounds the corners*/
+  
+  .flex-container { 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    justify-content: center;}
   
 </style>
 <body>
   <menu>CurbMasters</menu>
-  <h1>Gallery</h1>
-
-  <img src="" alt="">
+  <h1>Services</h1>
+  <div class="flex-container"></div>
+    <p>Snow Removal/Ice Control</p>
+    <p>Landscaping</p>
+    <p>Lawn Care</p>
+    <p>Janitorial/Construction Cleaning</p>
+    <p>Parking Lot Sweeping/Street Cleaning</p>
+  </div>
 </body>
 </html>
