@@ -13,13 +13,13 @@ body {
 menu { 
     margin: 0;  
     padding: .1rem;
-    font: italiana;
+    font-family: italiana;
     background-color: #7a7676;
     font-size: 1.75rem;}
 
   h1 { 
     font-size: 1.5rem;
-    font: italiana; 
+    font-family: italiana; 
     text-align: center;
     margin-bottom: 0rem;}
 
@@ -39,13 +39,26 @@ menu {
 </style>
 <body>
   <menu>CurbMasters</menu>
+
+  <nav>
+    <button onclick="togglemenu()">Menu &#9662;</button>
+    <div class="dropdown" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="../page2.html">Page2</a>
+      <a href="../page3.html">Page3</a>
+      <a href="#">Page4</a>
+    </div>
+  </nav>
+
   <h1>Services</h1>
+
   <div class="flex-container"></div>
     <p>Snow Removal/Ice Control</p>
     <p>Landscaping</p>
     <p>Lawn Care</p>
     <p>Janitorial/Construction Cleaning</p>
     <p>Parking Lot Sweeping/Street Cleaning</p>
-</div>
+  </div>
+
 </body>
 </html>
