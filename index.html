@@ -10,22 +10,22 @@
 </head>
 <style>
 
-body {
+  body {
     max-width: 1240px;
     margin: .08rem}
     
-menu {
+  menu {
     margin: 0;  
     padding: .1rem;
     font-family: "playfair display";
     background-color: #9d9d9d;
     font-size: 1.75rem;}
     
-    nav {
+  nav {
       background: #333;
       padding: 10px;}
 
-    nav button {
+  nav button {
       background-color: #444;
       color: #fff;
       padding: 10px;
@@ -34,20 +34,20 @@ menu {
       width: 100%;
       text-align: left;}
 
-    .dropdown {
+  .dropdown {
       display: none;
       background: #555;}
 
-    .dropdown.show {
+  .dropdown.show {
       display: block;}
 
-    .dropdown a {
+  .dropdown a {
       color: #fff;
       padding: 10px;
       display: block;
       text-decoration: none;}
 
-    .dropdown a:hover {
+  .dropdown a:hover {
       background: #666;}
 
   h1 { 
@@ -58,9 +58,8 @@ menu {
     text-align: center;
     margin-bottom: 0rem;}
     
-    span {
-      margin: 1rem;
-    }
+  span {
+      margin: 1rem;}
 
   p { 
     text-align: center;
@@ -75,6 +74,13 @@ menu {
     justify-content: space-around;
     align-items: flex-start;}
   
+    @media (min-width: 1024px) {
+      .flex-container{ 
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+  
 </style>
 <body>
   <menu>CurbMasters (406)-xxx-xxxx</menu>
@@ -83,7 +89,6 @@ menu {
     <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
     <button onclick="toggleMenu()">Menu <span>➤</span></button>
     <div class="dropdown" id="menu">
-      <!-- your home would be index.html, mine isn't because it is an example -->
       <a href="index.html">Home</a>
       <a href="pages/about-us.html">About Us</a>
       <a href="pages/services.html">Services</a>
@@ -103,11 +108,15 @@ menu {
     <p>Janitorial/Construction Cleaning</p>
     <p>Parking Lot Sweeping/Street Cleaning</p>
   </div>
+  <footer>
+    Copyright
+  </footer>
 
   <script>
 
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("show");}
   </script>
+
 </body>
 </html>
