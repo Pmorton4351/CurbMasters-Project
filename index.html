@@ -4,24 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CurbMasters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <style>
 
 body {
+    max-width: 1240px;
     margin: .08rem}
     
-menu { 
+menu {
     margin: 0;  
     padding: .1rem;
-    font-family: italiana;
-    background-color: #7a7676;
+    font-family: "playfair display";
+    background-color: #9d9d9d;
     font-size: 1.75rem;}
+    
+    nav {
+      background: #333;
+      padding: 10px;}
+
+    nav button {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;}
+
+    .dropdown {
+      display: none;
+      background: #555;}
+
+    .dropdown.show {
+      display: block;}
+
+    .dropdown a {
+      color: #fff;
+      padding: 10px;
+      display: block;
+      text-decoration: none;}
+
+    .dropdown a:hover {
+      background: #666;}
 
   h1 { 
     font-size: 1.5rem;
-    font-family: italiana; 
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-align: center;
     margin-bottom: 0rem;}
+    
+    span {
+      margin: 1rem;
+    }
 
   p { 
     text-align: center;
@@ -38,27 +77,37 @@ menu {
   
 </style>
 <body>
-  <menu>CurbMasters</menu>
+  <menu>CurbMasters (406)-xxx-xxxx</menu>
 
   <nav>
-    <button onclick="togglemenu()">Menu &#9662;</button>
+    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+    <button onclick="toggleMenu()">Menu <span>➤</span></button>
     <div class="dropdown" id="menu">
-      <a href="../index.html">Home</a>
-      <a href="../page2.html">Page2</a>
-      <a href="../page3.html">Page3</a>
-      <a href="#">Page4</a>
+      <!-- your home would be index.html, mine isn't because it is an example -->
+      <a href="index.html">Home</a>
+      <a href="pages/about-us.html">About Us</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/contact-us.html">Contact Us</a>
+      <a href="pages/faq.html">FAQ</a>
     </div>
   </nav>
 
-  <h1>Services</h1>
-
+  <h1>Home</h1>
+  <span>
+    At CurbMasters, we believe your outdoor space should be as beautiful and functional as the inside of your home. Whether you're looking to refresh your lawn, design a custom landscape, or maintain a pristine yard year-round, our team is here to bring your vision to life.
+  </span>
   <div class="flex-container"></div>
-    <p>Snow Removal/Ice Control</p>
-    <p>Landscaping</p>
     <p>Lawn Care</p>
+    <p>Landscaping</p>
+    <p>Snow Removal/Ice Control</p>
     <p>Janitorial/Construction Cleaning</p>
     <p>Parking Lot Sweeping/Street Cleaning</p>
   </div>
 
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");}
+  </script>
 </body>
 </html>
