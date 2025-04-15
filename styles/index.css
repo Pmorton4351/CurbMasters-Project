@@ -1,0 +1,25 @@
+span {
+    margin: 1rem;
+  }
+
+  p {
+    text-align: center;
+    padding: 5rem 1rem 1rem 1rem;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 15px #0000004d; /*This makes it appear to float*/
+    border-radius: 5px;
+  } /*This rounds the corners*/
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  @media (min-width: 1024px) {
+    .flex-container {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
