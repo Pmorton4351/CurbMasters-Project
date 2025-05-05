@@ -16,10 +16,3 @@ span {
     justify-content: space-around;
     align-items: flex-start;
   }
-
-  @media (min-width: 1024px) {
-    .flex-container {
-      max-width: 320px;
-      margin: 0 auto;
-    }
-  }
