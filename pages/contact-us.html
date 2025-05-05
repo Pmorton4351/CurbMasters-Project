@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="../styles/base.css" />
+  <link rel="stylesheet" href="../styles/contact.css"
 </head>
 
 <body>
-  <header>CurbMasters (406)-xxx-xxxx</header>
+  <header>CurbMasters (406)-495-6336</header>
 
   <nav>
     <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
@@ -23,9 +24,33 @@
   </nav>
 
   <h1>Contact Us</h1>
+
+  <section class="contact-container">
+    <h2>Get in Touch</h2>
+    <p>Have questions or want a free consultation? Contact us today!</p>
+
+    <form action="submit_form.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" required>
+        <label for="message">Your Message:</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+    
+    <h3>Other Ways to Reach Us</h3>
+    <p>Email: <a href="mailto:Peyton.Morton4351@gmail.com">Peyton.Morton4351@gmail.com</a></p>
+    <p>Phone: (406)-495-6336</p>
+    <p>Address: 3250 Canyon Ferry Rd, East Helena, MT</p>
+    <p>Facebook: <a href="https://www.facebook.com/Curb.Masters.Maintenance/">CurbMasters</a></p>
+</section>
+
   <footer>
-    Copyright
+    Copyright, CurbMasters Maintenance. All rights reserved
   </footer>
+
   <script>
 
     function toggleMenu() {
