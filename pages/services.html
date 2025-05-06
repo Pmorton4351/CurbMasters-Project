@@ -1,63 +1,91 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services</title>
-  <link rel="stylesheet" href="../styles/base.css" />
-  <link rel="stylesheet" href="../styles/services.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/services.css" />
+  </head>
 
-<body>
-  <header>CurbMasters (406)-495-6336</header>
+  <body>
+    <header>CurbMasters (406)-495-6336</header>
 
-  <nav>
-    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
-    <button onclick="toggleMenu()">Menu <span>➤</span></button>
-    <div class="dropdown" id="menu">
-      <a href="../index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact-us.html">Contact Us</a>
-      <a href="faq.html">FAQ</a>
-    </div>
-  </nav>
+    <nav>
+      <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+      <button onclick="toggleMenu()">Menu <span>➤</span></button>
+      <div class="dropdown" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact-us.html">Contact Us</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
 
-  <h1>Services</h1>
+    <h1>Services</h1>
 
-  <section class="services-container">
-    <div class="service">
-        <img src="landscaping.jpg" alt="Landscaping Design">
+    <section class="services-container">
+      <div class="service">
+        <img src="../assets/images/lanscape.png" alt="Landscaping Design" />
         <h2>Landscaping Design</h2>
-        <p>Transform your outdoor space with expert landscaping solutions tailored to your needs.</p>
-    </div>
-
-    <div class="service">
-        <img src="lawncare.jpg" alt="Lawn Care">
+        <p>
+          Landscaping enhances outdoor spaces with thoughtful design, lush
+          greenery, and functional features. From garden installations and
+          hardscaping to tree planting and irrigation, professional landscaping
+          transforms yards into beautiful, sustainable environments.
+        </p>
+      </div>
+      <div class="service">
+        <img src="../assets/images/Grass.png" alt="Lawn Care" />
         <h2>Lawn Care & Maintenance</h2>
-        <p>Keep your lawn lush and green with our professional maintenance and care services.</p>
-    </div>
+        <p>
+          Services ensure lush, healthy grass and a vibrant outdoor space. From
+          mowing and edging to fertilization, aeration, and weed control,
+          professional care keeps lawns looking their best year-round.
+        </p>
+      </div>
 
-    <div class="service">
-        <img src="gardening.jpg" alt="Garden Installation">
-        <h2>Garden Installation</h2>
-        <p>We design and install beautiful gardens using sustainable and eco-friendly techniques.</p>
-    </div>
+      <div class="service">
+        <img src="../assets/images/snow.png" alt="Snow Removal" />
+        <h2>Snow Removal/ Ice Control</h2>
+        <p>
+          Services ensure safe, accessible walkways and driveways during winter.
+          From plowing and shoveling to salting and de-icing, these services
+          help prevent accidents and keep properties clear of hazardous snow and
+          ice buildup.
+        </p>
+      </div>
 
-    <div class="service">
-        <img src="patio.jpg" alt="Outdoor Living Spaces">
-        <h2>Outdoor Living Spaces</h2>
-        <p>Create stunning patios, walkways, and seating areas that enhance your home’s beauty.</p>
-    </div>
-  </section>
+      <div class="service">
+        <img src="../assets/images/janitorial.png" alt="Janitorial" />
+        <h2>Janitorial/ Contruction Cleaning</h2>
+        <p>
+          Ensure spotless, safe, and well-maintained spaces. From routine office
+          cleaning to post-construction debris removal, professional cleaning
+          enhances hygiene and organization. Whether tackling dust,
+          deep-cleaning floors, or disinfecting high-traffic areas, these
+          services create a polished and welcoming environment for businesses
+          and properties.
+        </p>
+      </div>
 
-  <footer>
-    Copyright
-  </footer>
-  <script>
+      <div class="service">
+        <img src="../assets/images/sweeping.png" alt="Sweeping" />
+        <h2>Parking Lot Sweeping/ Street Cleaning</h2>
+        <p>
+          services keep roads, lots, and walkways clean and debris-free. Regular
+          sweeping removes dirt, litter, and hazardous materials, improving
+          safety and enhancing curb appeal.
+        </p>
+      </div>
+    </section>
 
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");}
-  </script>
-</body>
+    <footer>Copyright, CurbMasters Maintenance. All rights reserved</footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>
