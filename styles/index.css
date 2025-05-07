@@ -1,30 +1,39 @@
-span {
-  margin: 1rem;
-}
-
-p {
-  text-align: center;
-  padding: 5rem 1rem 1rem 1rem;
-  border: 1px solid #000000;
-  box-shadow: 5px 5px 15px #0000004d;
-  border-radius: 5px;
-}
-
-.flex-container {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 20px;
+  border: 1px #000;
 }
 
-a {
-  color: black; /* Change to any color you prefer */
-  text-decoration: none; /* Removes the underline */
+.flex-container {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
 }
 
-a:hover {
-  color: #8e8e8e; /* When Hovered it changes colors */
+.flex-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.flex-container a {
+  color: #0c2f0c;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+.contact {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
 }
 footer {
+
   text-align: center;
   padding: 10px;
   background-color: #333333;
