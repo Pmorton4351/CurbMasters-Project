@@ -6,7 +6,6 @@ body {
 header {
   margin: 0;
   padding: 0.1rem;
-  font-family: "playfair display";
   background-color: #9d9d9d;
   font-size: 1.75rem;
 }
@@ -48,7 +47,6 @@ nav button {
 
 h1 {
   font-size: 2rem;
-  font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-style: normal;
   text-align: center;
